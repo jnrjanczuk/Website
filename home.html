@@ -210,6 +210,56 @@
         // Project data - you can expand this with more details for each project
         const projects = [
             {
+                title: "MacOS ASCIIquarium",
+                description: "Functional ASCIIquarium screensaver compatible with MacOS.",
+                tags: ["Lua", "Shell Scripting", "Automation"],
+                imageUrl: "project-images/asciiquarium.jpg",
+                details: `
+                    <h3>Overview</h3>
+                    <p>Developed a program that automatically opens a terminal window displaying ASCIIquarium upon detecting a session of three minutes of inactivity,
+                         closing the window on any mouse movement or key stroke.</p>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Automatic detection of inactivity for screensaver feel</li>
+                        <li>User customization of inactivity threshold</li>
+                        <li>Clean removal of terminal window upon keystroke/mouse movement</li>
+                    </ul>
+                `
+            },
+            {
+                title: "Lung Cancer Risk Predictor",
+                description: "Machine learning model using Random Forrest Classification to predict a patient's risk of lung cancer given biometric data.",
+                tags: ["Python", "Machine Learning", "Random Forrest Classification"],
+                imageUrl: "project-images/lungcancer.png",
+                details: `
+                    <h3>Overview</h3>
+                    <p>My project for Michigan Data Science Team W26, a machine learning model using Random Forrest Classification to predict a patient's risk of lung cancer given biometric data, presented at MDST's Data Science Night expo.</p>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Model trained using a 5,0000+ record clinical dataset</li>
+                        <li>Achieved a mean cross-validation accuracy of 95.45% (±0.53%)</li>
+                        <li>Developed an interactive web app enabling users to input personal health indicators and receive real-time lung cancer risk predictions, with dynamic feature importance visualizations</li>
+                        <li>Deployed web app using Streamlit</li>
+                    </ul>
+                `
+            },
+            {
+                title: "Poker Bot",
+                description: "Built a Texas Hold'em poker bot that uses Monte Carlo simulation and probability modeling to make optimal betting decisions against human opponents.",
+                tags: ["C++", "Monte Carlo Simulation", "OOP"],
+                imageUrl: "project-images/poker.jpg",
+                details: `
+                    <h3>Overview</h3>
+                    <p>A poker-playing agent that evaluates hand strength and pot odds to decide when to fold, call, or raise in simulated and live games.</p>
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Monte Carlo hand equity estimation</li>
+                        <li>Automated betting strategy engine</li>
+                        <li>Support for games with any number of players</li>
+                    </ul>
+                `
+            },
+            {
                 title: "NBA Webscraping and Data Visualization",
                 description: "Webscraped NBA player data from the 2024-25 season; used linear regression to project \"actual player salary\"; visualized data and presented at Wolverine Sports Analytics Expo",
                 tags: ["Python", "BeautifulSoup", "Pandas"],
@@ -240,55 +290,6 @@
                         <li>Natural language processing capabilities</li>
                         <li>Efficient data structure implementation</li>
                         <li>Optimized for performance in C++</li>
-                    </ul>
-                `
-            },
-            {
-                title: "Poker Bot",
-                description: "Built a Texas Hold'em poker bot that uses Monte Carlo simulation and probability modeling to make optimal betting decisions against human opponents.",
-                tags: ["C++", "Monte Carlo Simulation", "OOP"],
-                imageUrl: "project-images/poker.jpg",
-                details: `
-                    <h3>Overview</h3>
-                    <p>A poker-playing agent that evaluates hand strength and pot odds to decide when to fold, call, or raise in simulated and live games.</p>
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>Monte Carlo hand equity estimation</li>
-                        <li>Automated betting strategy engine</li>
-                        <li>Support for games with any number of players</li>
-                    </ul>
-                `
-            },
-            {
-                title: "MacOS ASCIIquarium",
-                description: "Developed a program enabling a functional ASCIIquarium screensaver for MacOS.",
-                tags: ["Lua", "Shell Scripting", "Automation"],
-                imageUrl: "project-images/asciiquarium.jpg",
-                details: `
-                    <h3>Overview</h3>
-                    <p>A program that automatically opens a terminal window displaying ASCIIquarium upon detecting a session of three minutes of inactivity,
-                         closing the window on any mouse movement or key stroke.</p>
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>Automatic detection of inactivity for screensaver feel</li>
-                        <li>User customization of inactivity threshold</li>
-                        <li>Clean removal of terminal window upon keystroke/mouse movement</li>
-                    </ul>
-                `
-            },
-            {
-                title: "AI Life Automation Agent",
-                description: "Personal AI agent that automates routine tasks—calendar management, email triage, and workflow triggers—using LLM APIs and custom integrations.",
-                tags: ["Python", "LLMs", "Automation"],
-                imageUrl: "",
-                details: `
-                    <h3>Overview</h3>
-                    <p>An agentic system that connects to everyday tools and executes multi-step workflows based on natural language commands.</p>
-                    <h3>Key Features</h3>
-                    <ul>
-                        <li>Natural language task parsing</li>
-                        <li>Integration with calendar and email APIs</li>
-                        <li>Extensible plugin architecture for new automations</li>
                     </ul>
                 `
             }
