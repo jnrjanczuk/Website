@@ -457,6 +457,7 @@
 
         function updateActiveNav() {
             const scrollPos = window.scrollY + 120;
+            const isAtBottom = window.scrollY >= document.body.scrollHeight - window.innerHeight - 100;
             let current = '';
 
             sections.forEach((section) => {
@@ -464,6 +465,11 @@
                     current = section.getAttribute('id');
                 }
             });
+
+            // If at the bottom and Contact exists, ensure Contact is highlighted
+            if (isAtBottom && document.getElementById('contact')) {
+                current = 'contact';
+            }
 
             navLinks.forEach((link) => {
                 link.classList.toggle('active', link.getAttribute('href') === `#${current}`);

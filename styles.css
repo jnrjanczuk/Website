@@ -963,6 +963,10 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    nav .logo::before {
+        display: none;
+    }
+
     nav ul {
         gap: 1rem;
         font-size: 0.9rem;
